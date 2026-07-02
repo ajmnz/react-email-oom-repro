@@ -1,0 +1,5 @@
+.DS_Store
+.react-email
+.yarn/
+.pnp.*
+node_modules/
