@@ -1,0 +1,21 @@
+{
+  "name": "react-email-oom-repro",
+  "version": "0.0.0",
+  "packageManager": "yarn@4.14.1",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-emails.mjs",
+    "dev": "email dev -d ./emails",
+    "dev:small-heap": "NODE_OPTIONS=--max-old-space-size=128 email dev -d ./emails",
+    "touch-shared": "node scripts/touch-shared.mjs"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-email": "6.6.5"
+  },
+  "devDependencies": {
+    "@react-email/ui": "6.6.5",
+    "@types/react": "18.2.53"
+  }
+}
